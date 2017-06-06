@@ -1,8 +1,7 @@
 var dirVars = require('../base/dir-vars.config.js');
 var eslintFormatter = require('eslint-friendly-formatter');
 module.exports = {
-  rules: [
-    {
+  rules: [{
       test: /\.js$/,
       enforce: 'pre',
       loader: 'eslint-loader',
@@ -18,7 +17,11 @@ module.exports = {
       include: dirVars.srcRootDir,
       loader: 'babel-loader',
       options: {
-        presets: [['es2015', { loose: true }]],
+        presets: [
+          ['es2015', {
+            loose: true
+          }]
+        ],
         cacheDirectory: true,
         plugins: ['transform-runtime'],
       },
@@ -28,6 +31,7 @@ module.exports = {
       include: dirVars.srcRootDir,
       loader: 'html-loader',
     },
+     
     {
       test: /\.ejs$/,
       include: dirVars.srcRootDir,

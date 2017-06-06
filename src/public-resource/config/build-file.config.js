@@ -12,7 +12,7 @@ module.exports = {
     pace: require('!!file-loader?name=static/js/plugins/[name].[ext]!../../../vendor/plugins/pace/pace.min.js'),
   },
   images: {
-    'login-bg': require('!!file-loader?name=static/images/[name].[ext]!../imgs/login-bg.jpg'),
+    'login-bg': require('!!file-loader?name=static/images/[name].[ext]!../img/login-bg.jpg'),
     'favicon': require('!!file-loader?name=[name].[ext]!../../favicon.ico'),
   },
   css: {
