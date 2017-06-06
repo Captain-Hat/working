@@ -13,6 +13,7 @@ module.exports = {
   },
   images: {
     'login-bg': require('!!file-loader?name=static/images/[name].[ext]!../imgs/login-bg.jpg'),
+    'favicon': require('!!file-loader?name=[name].[ext]!../../favicon.ico'),
   },
   css: {
     bootstrap: require('!!file-loader?name=static/css/[name].[ext]!../../../vendor/css/bootstrap.min14ed.css?v=3.3.6'),
