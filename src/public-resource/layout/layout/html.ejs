@@ -1,7 +1,15 @@
+ 
+
 <%= header %>
 <div id="wrapper">
-  <%= topNav %>
   <%= sideMenu %>
-  <%= content %>
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <%= topNav %>
+    <%= conTabs %>
+    <div class="row J_mainContent" id="content-main">
+      <%= content %>
+    </div>
+    <%= copyright %>
+  </div>
 </div>
 <%= footer %>

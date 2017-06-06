@@ -28,5 +28,6 @@ module.exports = {
   // 多文件的恶心插件
   special: {
     layer: '../../build-need/layer/layer.min.js',
+    awesome: '../../build-need/awesome/font-awesome.min93e3.css',
   },
 };

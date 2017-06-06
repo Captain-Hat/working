@@ -5,6 +5,8 @@ const header = require('../../components/header/html.ejs'); // 页头的模板
 const footer = require('../../components/footer/html.ejs'); // 页脚的模板
 const topNav = require('../../components/top-nav/html.ejs'); // 顶部栏的模板
 const sideMenu = require('../../components/side-menu/html.ejs'); // 侧边栏的模板
+const conTabs = require('../../components/conTabs/html.ejs'); // 侧边栏的模板
+const copyright = require('../../components/copyright/html.ejs'); // 侧边栏的模板
 
 /* 整理渲染公共部分所用到的模板变量 */
 const pf = {
@@ -27,6 +29,8 @@ const moduleExports = {
       footer: footer(componentRenderData),
       topNav: topNav(componentRenderData),
       sideMenu: sideMenu(componentRenderData),
+      conTabs: conTabs(componentRenderData),
+      copyright: copyright(componentRenderData),
       content,
     };
     return layout(renderData);
