@@ -1,15 +1,17 @@
- 
-
 <%= header %>
-<div id="wrapper">
-  <%= sideMenu %>
-  <div id="page-wrapper" class="gray-bg dashbard-1">
-    <%= topNav %>
-    <%= conTabs %>
-    <div class="row J_mainContent" id="content-main">
-      <%= content %>
-    </div>
-    <%= copyright %>
+  <div id="wrapper">
+    <%= sideMenu %>
+      <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="topbar">
+          <%= topNav %>
+            <%= conTabs %>
+        </div>
+        <div class="row J_mainContent" id="content-main">
+          <div id="content-box">
+            <%= content %>
+          </div>
+        </div>
+        <%= copyright %>
+      </div>
   </div>
-</div>
-<%= footer %>
+  <%= footer %>

@@ -12,8 +12,7 @@ var configPlugins = [
     $: 'jquery',
     jQuery: 'jquery',
     'window.jQuery': 'jquery',
-    'window.$': 'jquery',
-    layer: 'layer'
+    'window.$': 'jquery'
   }),
   /* 抽取出所有通用的部分 */
   new webpack.optimize.CommonsChunkPlugin({
