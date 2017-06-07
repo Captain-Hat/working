@@ -1,10 +1,13 @@
-
 $(() => {
   console.log('hahahahh');
-  /* 事件绑定 开始 */
-
-  /* 事件绑定 结束 */
-
-  /* 各种定时器 开始 */
-  /* 各种定时器 结束 */
+  // sidemenu和页面匹配
+  var pageName = window.location.pathname;
+  var $curPage = $('nav.navbar-default a[href$="' + pageName + '"]');
+  var parendUl = $curPage.parent().parent('.nav-second-level').length;
+  console.log(parendUl);
+  if (parendUl > 0) {
+    $curPage.addClass('active').parent().parent('ul').addClass('in').parent('li').addClass('active');
+  } else {
+    $curPage.addClass('active');
+  }
 });
