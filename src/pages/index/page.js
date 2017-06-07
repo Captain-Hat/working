@@ -8,5 +8,4 @@ $(() => {
     console.log(config.API_ROOT);
     console.log(config.DIRS.BUILD_FILE.js.html5shiv);
   }
-  console.log('xxxx');
 });

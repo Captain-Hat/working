@@ -33,6 +33,7 @@ module.exports = {
 
     /* config */
     configModule: path.resolve(dirVars.configDir, 'common.config'),
+    layer: path.resolve(dirVars.vendorDir, 'plugins/layer/layer.min')
   },
 
   // 当require的模块找不到时，尝试添加这些后缀后进行寻找
