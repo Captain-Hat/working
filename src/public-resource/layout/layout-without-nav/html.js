@@ -1,8 +1,9 @@
 const config = require('configModule');
 const noJquery = require('withoutJqueryModule');
 const layout = require('./html.ejs');
+
 const header = require('../../components/header/html.ejs');
-const footer = require('../../components/footer/html.ejs');
+const footer = require('../../components/footer-login/html.ejs');
 
 const pf = {
   pageTitle: '',
